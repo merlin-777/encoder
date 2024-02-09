@@ -1,0 +1,134 @@
+html{
+    font-family: 'Inter', sans-serif;
+}
+
+
+main{
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #F3F5FC;
+    padding: 20px;
+}
+
+
+.side-text-to-encrypt{
+    display: inline-block;
+    width:78%;
+    height: 944px;
+}
+
+
+.text-to-encrypt{
+    margin-top: 128px;
+    margin-left: 200px;
+    margin-right: auto;
+}
+
+.side-translation{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 944px;
+    width: 400px;
+    border-radius: 32px;
+    background-color: #FFFFFF;
+    padding: 0 32px ;
+    float:right ;
+}
+
+
+.translation-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+.logo{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 120px;
+    height: 48px;
+    gap: 40px;
+}
+
+.tip{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #495057;
+}
+
+.wrapper-actions{
+    text-align: center;
+}
+
+.btn-encode{
+    background: #0A3871;
+    color:#ffff;
+    border: none;
+}
+
+.btn-decode{
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    color:#0A3871;
+}
+
+.btn-copy{
+    background-color: transparent;
+    color:#0A3871;
+    border: 1px solid #0A3871;
+}
+
+.exclamation-group{
+    display:flex;gap:8px;
+}
+
+/*--------------------------*/
+
+textarea {
+    resize: none;
+    width: 50vw;
+    height: 70vh;
+    background-color: transparent;
+    border:none;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 48px */
+    text-align: left;
+    color: #0A3871;
+}
+textarea::placeholder{
+    color: #0A3871;
+}
+textarea:focus {
+    outline: none;
+    border: none;
+    caret-color: red;
+}
+h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: center;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+button{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    border-radius: 24px;
+}

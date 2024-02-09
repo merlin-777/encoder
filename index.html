@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encryptor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main >
+    <header>
+        <img class="logo" src = "img/logo.svg" alt="logo"/>
+    </header>
+
+
+    <section class="side-text-to-encrypt" >
+        <textarea class="text-to-encrypt" name="textarea" rows="10" cols="50" placeholder="Ingrese el texto aquí"></textarea>
+
+        <div class="wrapper-actions">
+            <div style="display: inline-block;">
+                <div class="exclamation-group">
+                    <img src ="img/exclamation.svg" alt="exclamation"/>
+                    <h1 class="tip">Solo letras minúsculas y sin acentos</h1>
+                </div>
+                <div >
+                    <button type="button" class="btn-encode" onclick="encode()">Encriptar</button>
+                    <button type="button" class="btn-decode" onclick="decode()">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="side-translation"  >
+        <div id="translation-content" class="translation-content">
+            <div>
+
+            </div>
+
+            <div id="no-message" style="display: none;">
+                <img src = "img/doll.svg" alt="muñeco con lupa"/>
+                <h3>Ningún mensaje fue encontrado</h3>
+                <br>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+
+            <div style="border: 2px solid red;">
+                <button type="button" class="btn-copy" onclick="copyText()">Desencriptar</button>
+            </div>
+        </div>
+    </section>
+
+
+</main>
+
+
+<script src="js.js"></script>
+
+</body>
+</html>
