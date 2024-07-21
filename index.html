@@ -15,12 +15,37 @@
 
 <body>
 
-<main >
-    <header>
-        <img class="logo" src = "img/logo.svg" alt="logo"/>
-    </header>
+<main>
+    <img class="logo" src="img/logo.svg" alt="logo"/>
 
 
+    <div class="text-to-encrypt">
+        <textarea class="text-to-encrypt" name="textarea" rows="10" cols="50"
+                  placeholder="Ingrese el texto aquí"></textarea>
+    </div>
+
+
+    <div class="wrapper-actions">
+        <div class="exclamation-group">
+            <img src="img/exclamation.svg" alt="exclamation"/>
+            <h1 class="tip">Solo letras minúsculas y sin acentos</h1>
+        </div>
+        <button type="button" class="btn-encode" onclick="encode()">Encriptar</button>
+        <button type="button" class="btn-decode" onclick="decode()">Desencriptar</button>
+    </div>
+
+
+    <div class="text-encode">
+            <img style="display: none" src="img/doll.svg" alt="muñeco con lupa"/>
+            <h3>Ningún mensaje fue encontrado</h3>
+            <br>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+
+            <button type="button" class="btn-copy" onclick="copyText()">Desencriptar</button>
+    </div>
+
+
+    <!--
     <section class="side-text-to-encrypt" >
         <textarea class="text-to-encrypt" name="textarea" rows="10" cols="50" placeholder="Ingrese el texto aquí"></textarea>
 
@@ -39,7 +64,7 @@
     </section>
 
 
-    <section class="side-translation"  >
+    <div class="side-translation"  >
         <div id="translation-content" class="translation-content">
             <div>
 
@@ -56,7 +81,8 @@
                 <button type="button" class="btn-copy" onclick="copyText()">Desencriptar</button>
             </div>
         </div>
-    </section>
+    </div>
+    -->
 
 
 </main>
