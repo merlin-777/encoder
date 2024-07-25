@@ -16,73 +16,42 @@
 <body>
 
 <main>
-    <img class="logo" src="img/logo.svg" alt="logo"/>
+    <div id="encode">
+        <img class="logo" src="img/logo.svg" alt="logo"/>
 
 
-    <div class="text-to-encrypt">
+        <div class="text-to-encrypt">
         <textarea class="text-to-encrypt" name="textarea" rows="10" cols="50"
                   placeholder="Ingrese el texto aquí"></textarea>
-    </div>
-
-
-    <div class="wrapper-actions">
-        <div class="exclamation-group">
-            <img src="img/exclamation.svg" alt="exclamation"/>
-            <h1 class="tip">Solo letras minúsculas y sin acentos</h1>
         </div>
-        <button type="button" class="btn-encode" onclick="encode()">Encriptar</button>
-        <button type="button" class="btn-decode" onclick="decode()">Desencriptar</button>
+
+
+        <div class="wrapper-actions">
+            <div class="exclamation-group">
+                <img src="img/exclamation.svg" alt="exclamation"/>
+                <h1 class="tip">Solo letras minúsculas y sin acentos</h1>
+            </div>
+
+            <div class="button-actions" >
+                <button type="button" class="btn-encode" onclick="encode()">Encriptar</button>
+                <button type="button" class="btn-decode" onclick="decode()">Desencriptar</button>
+            </div>
+        </div>
     </div>
 
 
-    <div class="text-encode">
-            <img style="display: none" src="img/doll.svg" alt="muñeco con lupa"/>
+    <div id="decode" class="text-encode">
+
+            <img class="doll" src="img/doll.svg" alt="muñeco con lupa"/>
             <h3>Ningún mensaje fue encontrado</h3>
             <br>
             <p>Ingresa el texto que desees encriptar o desencriptar.</p>
 
-            <button type="button" class="btn-copy" onclick="copyText()">Desencriptar</button>
-    </div>
-
-
-    <!--
-    <section class="side-text-to-encrypt" >
-        <textarea class="text-to-encrypt" name="textarea" rows="10" cols="50" placeholder="Ingrese el texto aquí"></textarea>
-
-        <div class="wrapper-actions">
-            <div style="display: inline-block;">
-                <div class="exclamation-group">
-                    <img src ="img/exclamation.svg" alt="exclamation"/>
-                    <h1 class="tip">Solo letras minúsculas y sin acentos</h1>
-                </div>
-                <div >
-                    <button type="button" class="btn-encode" onclick="encode()">Encriptar</button>
-                    <button type="button" class="btn-decode" onclick="decode()">Desencriptar</button>
-                </div>
-            </div>
+        <div class="center">
+            <button type="button" class="btn-copy" onclick="copyText()">Copiar</button>
         </div>
-    </section>
 
-
-    <div class="side-translation"  >
-        <div id="translation-content" class="translation-content">
-            <div>
-
-            </div>
-
-            <div id="no-message" style="display: none;">
-                <img src = "img/doll.svg" alt="muñeco con lupa"/>
-                <h3>Ningún mensaje fue encontrado</h3>
-                <br>
-                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-            </div>
-
-            <div style="border: 2px solid red;">
-                <button type="button" class="btn-copy" onclick="copyText()">Desencriptar</button>
-            </div>
-        </div>
     </div>
-    -->
 
 
 </main>
